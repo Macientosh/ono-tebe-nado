@@ -1,1 +1,1 @@
-https://github.com/Macientosh/ono-tebe-nado.git
+https://github.com/Macientosh/ono-tebe-nado
