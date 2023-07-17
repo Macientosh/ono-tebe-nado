@@ -44,6 +44,7 @@ body{
 
 .header__logo {
 	margin: 0 355px 0 209px;
+	display: block;
 }
 .header__logo-img {
 	width: 148px;
@@ -127,7 +128,7 @@ body{
 .cover__description-text {
 	text-align: center;
 	font-size: 22px;
-	line-height: 28px; 
+	line-height: 28px;
 	text-transform: uppercase;
 	word-spacing: 30px;
 	margin-top: 147px;
@@ -138,11 +139,11 @@ body{
 	position: absolute;
 	right: 50px;
 	bottom: -12px;
-	color: #fff; 
-  border: 1px solid #fff; 
+	color: #fff;
+  border: 1px solid #fff;
   background-color: transparent;
-  padding: 12px 32px; 
-  font-size: 22px; 
+  padding: 12px 32px;
+  font-size: 22px;
 	text-align: center;
 	text-transform: uppercase;
 }
