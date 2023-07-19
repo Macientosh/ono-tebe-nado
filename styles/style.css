@@ -1,14 +1,15 @@
 /* Блок HEADER */
 
 .header {
-	display: flex;
-	justify-content: space-between;
-	padding: 92px 50px;
-
+	display: grid;
+	grid-template-columns: 1fr auto 1fr; 
+  align-items: center; 
+  padding: 92px 50px;
 }
 
 .header__menu {
-	align-self: center;
+	grid-column: 1;
+	justify-self: start;
 }
 
 .header__links-list {
@@ -38,15 +39,18 @@
 }
 
 .header__logo {
-	padding: 0 355px 0 209px;
-	display: block;
-}
+	grid-column: 2; 
+  text-align: center;
+} 
+
 .header__logo-img {
 	width: 148px;
 	height: 105px;
 }
 
 .address {
+	grid-column: 3;
+	justify-self: end;
 	line-height: 24.3px;
 }
 
@@ -66,9 +70,22 @@
 
 .cover {
 	color: #fff;
+	min-height: 757px;
 	background-image: url(../images/cover.jpg);
 	overflow: hidden;
 	position: relative;
+	/* display: grid;
+	grid-template-columns: repeat(3, auto);
+	grid-template-rows: auto;
+	grid-template-areas: 
+			"title title title"
+			"descr descr button"; */
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	padding: 165px 50px 39px 50px;
+
 }
 
 .cover__overlay {
@@ -83,6 +100,7 @@
 }
 
 .cover__title {
+	grid-area: title;
 	position: relative;
 	display: grid;
 	grid-template-columns: repeat(1fr);
@@ -93,13 +111,11 @@
 	text-transform: uppercase;
 	letter-spacing: 30px;
 	z-index: 1;
-	padding: 165px 50px 0 50px;
-	row-gap: 20px;
+	gap: 10px;
 }
 
 .cover__title-word--center {
 	justify-self: center;
-	padding-right: 75px;
 }
 
 .cover__title-word--right {
@@ -119,25 +135,32 @@
 	letter-spacing: 0;
 }
 
+.container {
+	display: flex;
+	justify-content: center;
+}
+ 
 .cover__description {
+	grid-area: descr;
 	position: relative;
+	justify-self: end;
+	flex: 1 0 80%;
 	z-index: 2;
 }
 
 .cover__description-text {
-	text-align: center;
 	font-size: 22px;
 	line-height: 28px;
 	text-transform: uppercase;
 	word-spacing: 18px;
-	margin-top: 147px;
-	margin-bottom: 62px;
+	text-align: center;
 }
 
 .bet-button {
-	position: absolute;
-	right: 50px;
-	bottom: -12px;
+
+	position: relative;
+	max-width: 257px;
+
 	color: #fff;
   border: 1px solid #fff;
   background-color: transparent;
@@ -145,7 +168,9 @@
   font-size: 22px;
 	text-align: center;
 	text-transform: uppercase;
-}
+	z-index: 1;
+} 
+
 
 /* Блок LOTS */
 
