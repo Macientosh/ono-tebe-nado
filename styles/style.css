@@ -306,6 +306,7 @@
 
 .about__text {
 	padding-bottom: 25px;
+	font-size: 20px;
 }
 
 .about__text:last-child {
@@ -317,7 +318,7 @@
 .footer {
 	display: flex;
 	justify-content: space-between;
-	padding: 0 50px 90px 50px;
+	padding: 0 45px 90px 35px;
 }
 
 .footer__menu-link {
