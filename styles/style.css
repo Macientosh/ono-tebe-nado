@@ -95,7 +95,7 @@
 .cover__title {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: 1fr 1fr;
   grid-auto-rows: auto;
   font-size: 100px;
   font-weight: 700;
